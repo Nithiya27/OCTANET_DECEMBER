@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --Playfair: 'Playfair Display', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --dark: #3c393d;
+    --exDark: #2b2b2b;
+}  
+*{
+  margin: 0;
+  padding:0;
+  font-family: var(--Quicksand);
+  box-sizing:border_box;
+
+}  
+ul{
+  float:right;
+  display:flex;
+  list-style-type:none;
+  margin-top: 30px;
+  min-height: 400px;
+  margin-right: 60px;
+  font-size: 28px;
+}
+ul li a{
+  display:flex;
+  color:#fff;
+  padding: 10px 30px;
+  border: 1px solid transparent;
+  transition: 0.5 ease;
+  text-decoration:none;
+  
+}
+img{
+  height: 100px;
+  width: 100px;
+}
+header{ 
+ background-size:cover;
+ background-position: center;
+ mini-height: 100px;
+ height:100vh;
+ background-image:url("./back.avif");
+
+}
+ul li a:hover{
+  background-color:white;
+  color:#000;
+}
+.header_container{
+  margin: auto;
+  max-width: 1200px;
+}
+.title{
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.title p{
+  color:white;
+  font-size: 25px;
+}
+.title h1{
+    color: #fff;
+    font-size: 70px;
+
+}
+.book-container{
+  display:grid:
+ grid-template-columns: repeat(auto-fit,minmax(280px,auto));
+ justify-content:center;
+   gap:5rem;
+  align-items: center;
+  margin: 30px 0px;
+  flex-wrap: wrap;
+  float:left;
+  width:25%;
+  
+}
+.book-box{
+  width: 350px;
+ background-color:#fff;
+ border: 50% solid #ececec;
+ margin:13px;
+
+}
+.book-img{
+  width: 100%;
+  height: auto;
+}
+.book-img img{
+  width: 100%;
+  height: 50%;
+  object-position:center;
+}
+.book-text .book-title{
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #000;
+}
+.book-text .blog-title:hover{
+  color:black;
+  transition:all ea 0.3s;
+}
+.book-text p{
+  color:black;
+  font-size:0.9rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-clamp: 3;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  margin: 20px 0px;
+}
+
+
+
